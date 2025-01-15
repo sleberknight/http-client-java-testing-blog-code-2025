@@ -1,5 +1,7 @@
 This small project contains example code showing how to use the OkHttp MockWebServer in tests of HTTP client code.
 
+Note this is using the stable 4.x version of OkHttp and the `mockwebserver` artifact, not `mockwebserver3`.
+
 Here are descriptions of each class:
 
 * `User` is a simple model record class.
