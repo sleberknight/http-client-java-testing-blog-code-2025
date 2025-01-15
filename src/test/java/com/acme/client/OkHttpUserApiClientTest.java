@@ -42,7 +42,7 @@ class OkHttpUserApiClientTest {
                 .build();
 
         server = new MockWebServer();
-        baseUri = server.url("/").url().toURI();
+        baseUri = server.url("/").uri();
 
         apiClient = new UserApiClient(client, baseUri);
     }
