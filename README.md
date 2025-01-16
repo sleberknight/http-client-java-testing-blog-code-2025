@@ -3,7 +3,7 @@ This small project contains example code showing how to use the OkHttp MockWebSe
 Note this is using the stable 4.x version of OkHttp and the `mockwebserver` artifact, not `mockwebserver3`
 which requires OkHttp 5.x.
 
-The [OkHttp Change Log]([url](https://square.github.io/okhttp/changelogs/changelog/) indicates that the 5.x releases are
+The [OkHttp Change Log](https://square.github.io/okhttp/changelogs/changelog/) indicates that the 5.x releases are
 stable as of the [5.0.0-alpha.7]([url](https://square.github.io/okhttp/changelogs/changelog/#version-500-alpha7)) release, saying:
 
 > The alpha releases in the 5.0.0 series have production-quality code and an unstable API.
