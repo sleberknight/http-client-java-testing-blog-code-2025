@@ -21,7 +21,6 @@ import org.kiwiproject.test.assertj.KiwiAssertJ;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.random.RandomGenerator;
@@ -35,7 +34,7 @@ class OkHttpUserApiClientTest {
     private URI baseUri;
 
     @BeforeEach
-    void setUp() throws URISyntaxException {
+    void setUp() {
         client = ClientBuilder.newBuilder()
                 .connectTimeout(500, TimeUnit.MILLISECONDS)
                 .readTimeout(500, TimeUnit.MILLISECONDS)
