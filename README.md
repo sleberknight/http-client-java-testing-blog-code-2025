@@ -1,6 +1,16 @@
 This small project contains example code showing how to use the OkHttp MockWebServer in tests of HTTP client code.
 
-Note this is using the stable 4.x version of OkHttp and the `mockwebserver` artifact, not `mockwebserver3`.
+Note this is using the stable 4.x version of OkHttp and the `mockwebserver` artifact, not `mockwebserver3`
+which requires OkHttp 5.x.
+
+The [OkHttp Change Log]([url](https://square.github.io/okhttp/changelogs/changelog/) indicates that the 5.x releases are
+stable as of the [5.0.0-alpha.7]([url](https://square.github.io/okhttp/changelogs/changelog/#version-500-alpha7)) release, saying:
+
+> The alpha releases in the 5.0.0 series have production-quality code and an unstable API.
+> We expect to make changes to the APIs introduced in 5.0.0-alpha.X.
+> These releases are safe for production use and ‘alpha’ strictly signals that we’re still experimenting with some new APIs. 
+
+But to be "safe" this repository uses OkHttp 4.x and the original `com.squareup.okhttp3:mockwebserver:4.12.0` Maven coordinates.
 
 Here are descriptions of each class:
 
