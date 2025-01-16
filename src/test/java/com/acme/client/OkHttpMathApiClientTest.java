@@ -15,7 +15,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.concurrent.TimeUnit;
 
 class OkHttpMathApiClientTest {
@@ -25,14 +24,14 @@ class OkHttpMathApiClientTest {
     private MockWebServer server;
 
     @BeforeEach
-    void setUp() throws URISyntaxException {
+    void setUp() {
         client = ClientBuilder.newBuilder()
                 .connectTimeout(500, TimeUnit.MILLISECONDS)
                 .readTimeout(500, TimeUnit.MILLISECONDS)
                 .build();
 
         server = new MockWebServer();
-        var baseUri = server.url("/").url().toURI();
+        var baseUri = server.url("/").uri();
 
         mathClient = new MathApiClient(client, baseUri);
     }
