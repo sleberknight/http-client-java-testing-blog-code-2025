@@ -97,7 +97,7 @@ class OkHttpMathApiClientTest {
 
         assertAll(
                 () -> assertThat(recordedRequest.getMethod()).isEqualTo("GET"),
-                () -> assertThat(recordedRequest.getPath()).isEqualTo("/math/add/2/2", Integer.MAX_VALUE)
+                () -> assertThat(recordedRequest.getPath()).isEqualTo("/math/add/2/2")
         );
     }
 }
