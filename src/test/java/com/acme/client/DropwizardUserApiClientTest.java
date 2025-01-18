@@ -45,7 +45,7 @@ class DropwizardUserApiClientTest {
 
         static final long USER_DOES_NOT_EXIST_ID = -42L;
 
-        static AtomicBoolean return500NextRequest = new AtomicBoolean();
+        static final AtomicBoolean return500NextRequest = new AtomicBoolean();
 
         static void setReturn500NextRequest() {
             return500NextRequest.set(true);
