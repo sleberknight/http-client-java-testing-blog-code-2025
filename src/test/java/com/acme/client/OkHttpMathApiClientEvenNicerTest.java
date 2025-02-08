@@ -17,7 +17,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
-import org.kiwiproject.test.okhttp3.mockwebserver.MockWebServers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 class OkHttpMathApiClientEvenNicerTest {
 
     @RegisterExtension
-    private final MockWebServerExtension mockWebServerExtension = new MockWebServerExtension();
+    private final MockWebServerExtension serverExtension = new MockWebServerExtension();
 
     private MathApiClient mathClient;
     private Client client;
@@ -38,8 +37,8 @@ class OkHttpMathApiClientEvenNicerTest {
                 .readTimeout(500, TimeUnit.MILLISECONDS)
                 .build();
 
-        server = mockWebServerExtension.server();
-        var baseUri = MockWebServers.uri(server, "/");
+        server = serverExtension.server();
+        var baseUri = serverExtension.uri();
 
         mathClient = new MathApiClient(client, baseUri);
     }
