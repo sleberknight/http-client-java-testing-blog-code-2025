@@ -1,13 +1,12 @@
 package com.acme.junit.extension;
 
-import static org.kiwiproject.base.KiwiPreconditions.requireNotNull;
-
 import lombok.Getter;
 import lombok.experimental.Accessors;
 import okhttp3.mockwebserver.MockWebServer;
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
+import org.kiwiproject.base.KiwiPreconditions;
 import org.kiwiproject.io.KiwiIO;
 
 import java.io.IOException;
@@ -30,7 +29,7 @@ public class MockWebServerExtension implements BeforeEachCallback, AfterEachCall
     }
 
     public MockWebServerExtension(MockWebServer server) {
-        this.server = requireNotNull(server, "server must not be nul");
+        this.server = KiwiPreconditions.requireNotNull(server, "server must not be nul");
     }
 
     @Override
