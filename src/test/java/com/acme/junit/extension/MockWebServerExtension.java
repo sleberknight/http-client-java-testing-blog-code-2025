@@ -10,6 +10,7 @@ import org.kiwiproject.base.KiwiPreconditions;
 import org.kiwiproject.io.KiwiIO;
 
 import java.io.IOException;
+import java.net.URI;
 
 /**
  * A JUnit Jupiter extension that starts a {@link MockWebServer}
@@ -24,6 +25,10 @@ public class MockWebServerExtension implements BeforeEachCallback, AfterEachCall
     @Accessors(fluent = true)
     private MockWebServer server;
 
+    @Getter
+    @Accessors(fluent = true)
+    private URI uri;
+
     public MockWebServerExtension() {
         this(new MockWebServer());
     }
@@ -36,6 +41,7 @@ public class MockWebServerExtension implements BeforeEachCallback, AfterEachCall
     public void beforeEach(ExtensionContext context) throws IOException {
         server = new MockWebServer();
         server.start();
+        uri = server.url("/").uri();
     }
 
     @Override
