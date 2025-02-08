@@ -32,7 +32,7 @@ import java.util.random.RandomGenerator;
 class OkHttpUserApiClientNicerTest {
 
     @RegisterExtension
-    private final MockWebServerExtension mockWebServerExtension = new MockWebServerExtension();
+    private final MockWebServerExtension serverExtension = new MockWebServerExtension();
 
     private UserApiClient apiClient;
     private Client client;
@@ -46,7 +46,7 @@ class OkHttpUserApiClientNicerTest {
                 .readTimeout(500, TimeUnit.MILLISECONDS)
                 .build();
 
-        server = mockWebServerExtension.server();
+        server = serverExtension.server();
         baseUri = MockWebServers.uri(server, "/");
 
         apiClient = new UserApiClient(client, baseUri);
