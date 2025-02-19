@@ -10,7 +10,7 @@ stable as of the [5.0.0-alpha.7]([url](https://square.github.io/okhttp/changelog
 
 > The alpha releases in the 5.0.0 series have production-quality code and an unstable API.
 > We expect to make changes to the APIs introduced in 5.0.0-alpha.X.
-> These releases are safe for production use and ‘alpha’ strictly signals that we’re still experimenting with some new APIs. 
+> These releases are safe for production use and ‘alpha’ strictly signals that we’re still experimenting with some new APIs.
 
 But to be "safe" this repository uses OkHttp 4.x and the original `com.squareup.okhttp3:mockwebserver:4.12.0` Maven coordinates.
 
