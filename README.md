@@ -1,5 +1,7 @@
 # Example Java HTTP Client Testing using MockWebServer
 
+[![Build](https://github.com/sleberknight/http-client-java-testing-blog-code-2025/actions/workflows/build.yml/badge.svg)](https://github.com/sleberknight/http-client-java-testing-blog-code-2025/actions/workflows/build.yml)
+
 This small project contains example code showing how to use the OkHttp MockWebServer in tests of HTTP client code.
 
 Note this is using the stable 4.x version of OkHttp and the `mockwebserver` artifact, not `mockwebserver3`
