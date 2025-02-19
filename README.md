@@ -1,4 +1,4 @@
-## Example Java HTTP Client Testing using MockWebServer
+# Example Java HTTP Client Testing using MockWebServer
 
 This small project contains example code showing how to use the OkHttp MockWebServer in tests of HTTP client code.
 
