@@ -19,6 +19,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Test of the {@link MathApiClient} using Dropwizard's HTTP client testing
+ * support: {@link DropwizardClientExtension}.
+ */
 @ExtendWith(DropwizardExtensionsSupport.class)
 class DropwizardMathApiClientTest {
 

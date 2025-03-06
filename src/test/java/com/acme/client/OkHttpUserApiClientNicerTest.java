@@ -28,6 +28,10 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.random.RandomGenerator;
 
+/**
+ * Test of the {@link UserApiClient} using the OkHttp {@link MockWebServer} and some of
+ * the test utilities in <a href="https://github.com/kiwiproject/kiwi-test">kiwi-test</a>.
+ */
 @DisplayName("OkHttpUserApiClient (with kiwi-test)")
 class OkHttpUserApiClientNicerTest {
 

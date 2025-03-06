@@ -20,6 +20,10 @@ import org.kiwiproject.test.okhttp3.mockwebserver.MockWebServers;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Test of the {@link MathApiClient} using the OkHttp {@link MockWebServer} and some of
+ * the test utilities in <a href="https://github.com/kiwiproject/kiwi-test">kiwi-test</a>.
+ */
 @DisplayName("OkHttpMathApiClient (with kiwi-test)")
 class OkHttpMathApiClientNicerTest {
 

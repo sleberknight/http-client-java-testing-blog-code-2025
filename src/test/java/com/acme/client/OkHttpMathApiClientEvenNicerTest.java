@@ -20,6 +20,11 @@ import org.junit.jupiter.api.extension.RegisterExtension;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Test of the {@link MathApiClient} using the OkHttp {@link MockWebServer} and some of
+ * the test utilities in <a href="https://github.com/kiwiproject/kiwi-test">kiwi-test</a>
+ * including {@link MockWebServerExtension}.
+ */
 @DisplayName("OkHttpMathApiClient (with kiwi-test and JUnit extension)")
 class OkHttpMathApiClientEvenNicerTest {
 

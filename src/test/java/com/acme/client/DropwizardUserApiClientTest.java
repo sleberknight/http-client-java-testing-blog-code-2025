@@ -35,6 +35,10 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.random.RandomGenerator;
 
+/**
+ * Test of the {@link UserApiClient} using Dropwizard's HTTP client testing
+ * support: {@link DropwizardClientExtension}.
+ */
 @ExtendWith(DropwizardExtensionsSupport.class)
 class DropwizardUserApiClientTest {
 

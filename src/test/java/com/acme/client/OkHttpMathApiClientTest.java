@@ -17,6 +17,9 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Test of the {@link MathApiClient} using the OkHttp {@link MockWebServer}.
+ */
 class OkHttpMathApiClientTest {
 
     private MathApiClient mathClient;

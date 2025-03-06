@@ -25,6 +25,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.random.RandomGenerator;
 
+/**
+ * Test of the {@link UserApiClient} using the OkHttp {@link MockWebServer}.
+ */
 @DisplayName("OkHttpUserApiClient")
 class OkHttpUserApiClientTest {
 
