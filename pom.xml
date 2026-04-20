@@ -20,12 +20,12 @@
 
     <properties>
         <!-- dependency versions -->
-        <kiwi.version>5.2.0</kiwi.version>
-        <kiwi-bom.version>3.0.4</kiwi-bom.version>
+        <kiwi.version>5.3.1</kiwi.version>
+        <kiwi-bom.version>3.1.0</kiwi-bom.version>
         <okhttp3.mockwebserver.version>5.3.2</okhttp3.mockwebserver.version>
 
         <!-- test dependency versions -->
-        <kiwi-test.version>4.0.2</kiwi-test.version>
+        <kiwi-test.version>4.1.0</kiwi-test.version>
 
         <!-- plugin versions -->
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
