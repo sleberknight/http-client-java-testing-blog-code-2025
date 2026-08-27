@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.kiwiproject</groupId>
         <artifactId>kiwi-parent</artifactId>
-        <version>3.0.42</version>
+        <version>3.0.43</version>
     </parent>
 
     <groupId>com.acme</groupId>
@@ -21,11 +21,11 @@
     <properties>
         <!-- dependency versions -->
         <kiwi.version>5.4.0</kiwi.version>
-        <kiwi-bom.version>3.3.2</kiwi-bom.version>
-        <okhttp3.mockwebserver.version>5.4.0</okhttp3.mockwebserver.version>
+        <kiwi-bom.version>3.3.3</kiwi-bom.version>
+        <okhttp3.mockwebserver.version>5.5.0</okhttp3.mockwebserver.version>
 
         <!-- test dependency versions -->
-        <kiwi-test.version>4.2.0</kiwi-test.version>
+        <kiwi-test.version>4.3.0</kiwi-test.version>
 
         <!-- plugin versions -->
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
